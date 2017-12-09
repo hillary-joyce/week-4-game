@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Golden Girls RPG Game</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300" rel="stylesheet">
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <div class="frostedGlass"></div>
+  <div class="welcomeDiv">
+    <img src="assets/images/Golden_Girls_title.svg" alt="golden girls title">
+    <button class="button" id="playGame">
+      Play Game
+    </button>
+  </div>
+  <div class="playerPickerDiv" id="selectionDiv">
+    <h1 class="playerPrompt">select player </h1>
+    <div class="playerDivs dorothy" id="div1" value="player1">
+      <img src="assets/images/dorothy.jpg" alt="dorothy zbornak">
+      <p>Dorothy</p>
+    </div>
+    <div class="playerDivs rose" id="div2" value="player2">
+      <img src="assets/images/rose.jpg" alt="rose nylund">
+      <p>Rose</p>
+    </div>
+    <div class="playerDivs sophia" id="div3" value="player3">
+      <img src="assets/images/sophia.jpg" alt="sophia petrillo">
+      <p>Sophia</p>
+    </div>
+    <div class="playerDivs blanche" id="div4" value="player4">
+      <img src="assets/images/blanche.jpg" alt="blanche devereaux">
+      <p>Blanche</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="gamePlayUser" id="userPlayerDiv"></div>
+    <span class="vs"> vs </span>
+    <div class="gamePlayOpponent" id="currentOpponentDiv"></div>
+    <button class="button" id="attack">
+      Attack
+    </button>
+  </div>
+
+<!-- GAME ATTACK DETAILS -->
+  <div class="gameDetails" id="gameDetails">
+    <div class="userPlayerReadOut"></div>
+    <div class="OpponentReadOut"></div>
+  </div>
+
+  <!-- WIN LOSE DIV -->
+  <div class="winLoseDiv" id="winLose">
+    <h2 id="winLoseMessage"></h2>
+    <img id="winLoseImg" src="" alt="winning gif">
+    <button class="button" id="newGame">
+    New Game
+    </button>
+  </div>
+
+  <!-- JavaScript links -->
+  <!-- jQuery link -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <!-- custom JavaScript link -->
+  <script src="assets/javascript/game.js" charset="utf-8"></script>
+</body>
+
+</html>
